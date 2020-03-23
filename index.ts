@@ -1,2 +1,2 @@
-let ac:number = 'as'
+// let ac:number = 'as'
 console.log("saab")

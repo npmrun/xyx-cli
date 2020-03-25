@@ -1,21 +1,26 @@
 {
-  "name": "ts-weather",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {},
+  "name": "xyx-cli",
+  "version": "1.0.1",
+  "description": "xyx-cli",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.0.0",
+    "convert-excel-to-json": "^1.6.1"
+  },
   "devDependencies": {
-    "husky": "^4.2.3",
+    "@types/node": "^13.9.3",
     "tslint": "^6.1.0",
     "typescript": "^3.8.3"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "bin": {
+    "xyx": "dist/index.js"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx tslint -c tslint.json './src/**/*.ts'"
-    }
+  "scripts": {
+    "tsc": "tsc",
+    "runScript": "ts-node ./src/index.ts -c 南昌"
   },
   "keywords": [],
   "author": "",
